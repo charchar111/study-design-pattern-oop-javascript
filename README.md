@@ -10,6 +10,8 @@
 
 - 각 케이스 내에 별도의 readme 작성함
 
+- 책 "헤드 퍼스트 디자인 패턴"을 보고 실제로 코드로 테스트 작성 중
+
 ## 링크
 
 [strategy(전략 패턴)](src/service/strategy-pattern/duckSimulation)
