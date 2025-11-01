@@ -12,4 +12,4 @@
 
 ## 링크
 
-[strategy(전략 패턴)](src\service\strategy-pattern\duckSimulation\README.md)
+[strategy(전략 패턴)](src/service/strategy-pattern/duckSimulation)
