@@ -1,12 +1,22 @@
-import { useRef } from "react";
-import DuckSimulation from "./service/duckSimulation/duckSimulation";
+import { useEffect, useRef, useState } from "react";
+import DuckSimulation from "./service/strategy-pattern/duckSimulation/duckSimulation";
 
 function App() {
-  const duckSimulation = useRef(new DuckSimulation());
+  const duckSimulation = useRef<DuckSimulation>(null);
+
+  useEffect(() => {
+    duckSimulation.current = new DuckSimulation();
+  }, []);
+
+  const [count, setCount] = useState(0);
 
   return (
     <>
-      <div>hello world</div>
+      <div>
+        hello world
+        <p>{count}</p>
+        <button onClick={() => setCount(count + 1)}>click</button>
+      </div>
     </>
   );
 }
