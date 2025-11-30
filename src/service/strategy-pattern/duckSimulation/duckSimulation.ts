@@ -1,9 +1,4 @@
-/**
- * @todo
- * redhatDuck 구현
- * rubberDuck 구현
- * woodenDuck 구현
- *  */
+
 
 // import Duck from "../duck/interface/duck";
 import { Redhatduck, RubberDuck, WoodDuck } from "./duck/duckImples";

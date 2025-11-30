@@ -15,3 +15,4 @@
 ## 링크
 
 [strategy(전략 패턴)](src/service/strategy-pattern/duckSimulation)
+[decortator(데코레이터 패턴)](src/service/decorator-pattern/starbuzzSimulation)
