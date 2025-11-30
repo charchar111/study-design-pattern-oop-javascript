@@ -1,25 +1,18 @@
-import { useEffect, useRef, useState } from "react";
-import DuckSimulation from "./service/strategy-pattern/duckSimulation/duckSimulation";
-import StarbuzzSimulation from "./service/decorator-pattern/starbuzzSimulation/starbuzzSimulation";
+import { useEffect } from "react";
+// import DuckSimulation from "./service/strategy-pattern/duckSimulation/duckSimulation";
+// import StarbuzzSimulation from "./service/decorator-pattern/starbuzzSimulation/starbuzzSimulation";
+import WeatherStationSimulation from "./service/observer-pattern/weatherStationSimulation/weatherStationSimulation";
 
 function App() {
-  const duckSimulation = useRef<DuckSimulation>(null);
-  const starbuzzSimulation = useRef<StarbuzzSimulation>(null);
-
   useEffect(() => {
-    duckSimulation.current = new DuckSimulation();
-    // starbuzzSimulation.current = new StarbuzzSimulation();
+    // new DuckSimulation();
+    // new StarbuzzSimulation();
+    new WeatherStationSimulation();
   }, []);
-
-  const [count, setCount] = useState(0);
 
   return (
     <>
-      <div>
-        hello world
-        <p>{count}</p>
-        <button onClick={() => setCount(count + 1)}>click</button>
-      </div>
+      <div>hello world</div>
     </>
   );
 }
